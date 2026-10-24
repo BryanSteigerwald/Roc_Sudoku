@@ -1,4 +1,8 @@
+
 package rules;
 
-public class Rule {
+import model.Board;
+
+public interface Rule {
+    boolean isValid(Board board);
 }

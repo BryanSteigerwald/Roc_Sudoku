@@ -1,4 +1,8 @@
+
 package factory;
 
-public class PuzzleFactory {
+import model.Board;
+
+public abstract class PuzzleFactory {
+    public abstract Board createPuzzle();
 }

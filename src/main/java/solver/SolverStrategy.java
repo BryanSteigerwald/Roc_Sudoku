@@ -1,4 +1,8 @@
+
 package solver;
 
-public class SolverStrategy {
+import model.Board;
+
+public interface SolverStrategy {
+    boolean solve(Board board);
 }

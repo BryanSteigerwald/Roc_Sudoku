@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.BoardTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-24T22:43:40.946Z" hostname="BRYAN" time="0.026">
+  <properties/>
+  <testcase name="getValuesReturnsCopy()" classname="model.BoardTest" time="0.014"/>
+  <testcase name="rejectsValuesOutsideRange()" classname="model.BoardTest" time="0.003"/>
+  <testcase name="setAndGetValue()" classname="model.BoardTest" time="0.0"/>
+  <testcase name="newBoardStartsEmpty()" classname="model.BoardTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
