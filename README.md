@@ -2,7 +2,7 @@
 
 **Team:** Bryan Steigerwald, Christian Vandenburg  
 **Language:** Java  
-**Interface:** Swing UI (optional terminal view)
+**Interface:** Swing view (optional terminal view)
 
 ---
 
@@ -38,7 +38,7 @@ There is **no `Main` class**. A small launcher class serves as the application's
 | **Factory Method** | `PuzzleFactory` creates puzzles for each difficulty (`EasyPuzzleFactory`, `HardPuzzleFactory`, etc.) | Adding a new difficulty only requires adding a new factory implementation. |
 | **Strategy** | `SolverStrategy` (Backtracking Solver, Constraint Propagation) and `CluePlacementStrategy` | Allows algorithms to be swapped without modifying game code. |
 | **Command** *(planned)* | `Move` implements `Command` with `execute()` and `undo()`; `GameController` maintains a history stack | Provides undo/redo functionality and simplifies move logging. |
-| **Observer** *(planned)* | Game publishes events (`CellChanged`, `PuzzleSolved`, `ConflictFound`) that views and statistics trackers subscribe to | Decouples the model from the UI and secondary features. |
+| **Observer** *(planned)* | Game publishes events (`CellChanged`, `PuzzleSolved`, `ConflictFound`) that views and statistics trackers subscribe to | Decouples the model from the view and secondary features. |
 
 ### Backup / Bonus Patterns
 
@@ -128,7 +128,7 @@ Possible event types:
 
 Consumers include:
 
-- Swing UI
+- Swing view
 - Statistics tracker
 - Terminal view
 
@@ -140,7 +140,7 @@ Consumers include:
 
 Defines the contract for all user interfaces.
 
-#### SwingView (Primary UI)
+#### SwingView (Primary view)
 
 Consists of:
 
@@ -154,7 +154,7 @@ Consists of:
 #### Design Requirements
 
 - Swing components act as observers.
-- UI classes contain no game logic.
+- view classes contain no game logic.
 - Repaint based on received events.
 - Button actions are mapped to `Command` objects.
 - No `switch` statements in event handlers.
@@ -248,7 +248,7 @@ persistence
 | Person | Owns | Notes |
 |----------|----------|----------|
 | Bryan | Model, Rules/Validation, Factory, Puzzle Generation | Core game data and puzzle creation |
-| Christian | Controller, Commands, Events, SwingView | Gameplay flow and UI |
+| Christian | Controller, Commands, Events, SwingView | Gameplay flow and view |
 | Both | Solver, Hints, Module Wiring, Launcher, Testing, Persistence | Pair on interfaces first to maximize parallel development |
 
 ---
@@ -360,7 +360,7 @@ feature/console-view
 
 - [ ] Polymorphism used wherever appropriate.
 
-- [ ] Swing UI implemented and functional.
+- [ ] Swing view implemented and functional.
 
 - [ ] Persistence included as a reach goal.
 
