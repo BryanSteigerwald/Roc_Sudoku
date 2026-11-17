@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rules.SudokuValidatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.596Z" hostname="BRYAN" time="0.004">
+  <properties/>
+  <testcase name="testConstructorRejectsNullRules()" classname="rules.SudokuValidatorTest" time="0.001"/>
+  <testcase name="testInvalidBoardReturnsFalse()" classname="rules.SudokuValidatorTest" time="0.0"/>
+  <testcase name="testNullBoardReturnsFalse()" classname="rules.SudokuValidatorTest" time="0.001"/>
+  <testcase name="testConstructorRejectsEmptyRules()" classname="rules.SudokuValidatorTest" time="0.001"/>
+  <testcase name="testValidBoardReturnsTrue()" classname="rules.SudokuValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

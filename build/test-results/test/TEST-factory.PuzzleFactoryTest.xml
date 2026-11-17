@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="factory.PuzzleFactoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.461Z" hostname="BRYAN" time="0.008">
+  <properties/>
+  <testcase name="testCreatePuzzleContainsExpectedValues()" classname="factory.PuzzleFactoryTest" time="0.005"/>
+  <testcase name="testCreatePuzzleReturnsBoard()" classname="factory.PuzzleFactoryTest" time="0.0"/>
+  <testcase name="testCreatePuzzleReturnsNewBoardInstance()" classname="factory.PuzzleFactoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

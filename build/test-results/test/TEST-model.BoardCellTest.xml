@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.BoardCellTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.573Z" hostname="BRYAN" time="0.007">
+  <properties/>
+  <testcase name="getValuesReturnsCopy()" classname="model.BoardCellTest" time="0.0"/>
+  <testcase name="boardStoresValues()" classname="model.BoardCellTest" time="0.0"/>
+  <testcase name="givenCellCannotBeChanged()" classname="model.BoardCellTest" time="0.002"/>
+  <testcase name="copyDoesNotShareCells()" classname="model.BoardCellTest" time="0.001"/>
+  <testcase name="boardStartsEmpty()" classname="model.BoardCellTest" time="0.0"/>
+  <testcase name="markAsGivenLocksCell()" classname="model.BoardCellTest" time="0.001"/>
+  <testcase name="editableInitialValueCanBeChanged()" classname="model.BoardCellTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

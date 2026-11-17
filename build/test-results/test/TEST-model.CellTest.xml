@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="model.CellTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.587Z" hostname="BRYAN" time="0.005">
+  <properties/>
+  <testcase name="givenCellCannotBeChanged()" classname="model.CellTest" time="0.001"/>
+  <testcase name="cellStoresValue()" classname="model.CellTest" time="0.0"/>
+  <testcase name="pencilMarksCanBeAddedAndRemoved()" classname="model.CellTest" time="0.0"/>
+  <testcase name="pencilMarksAreClearedWhenValueIsPlaced()" classname="model.CellTest" time="0.001"/>
+  <testcase name="invalidValuesAreRejected()" classname="model.CellTest" time="0.001"/>
+  <testcase name="newCellIsEmptyAndNotGiven()" classname="model.CellTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

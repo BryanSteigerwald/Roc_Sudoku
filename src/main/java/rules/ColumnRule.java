@@ -1,29 +1,51 @@
-
 package rules;
 
 import model.Board;
+import model.CellPosition;
+import model.Conflict;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ColumnRule implements Rule {
+
     @Override
     public boolean isValid(Board board) {
-        for (int col = 0; col < Board.SIZE; col++) {
-            boolean[] seen = new boolean[Board.SIZE + 1];
+        return board != null && findConflicts(board).isEmpty();
+    }
 
-            for (int row = 0; row < Board.SIZE; row++) {
-                int value = board.getValue(row, col);
+    @Override
+    public List<Conflict> findConflicts(Board board) {
+        List<Conflict> conflicts = new ArrayList<>();
+
+        if (board == null) {
+            return conflicts;
+        }
+
+        for (int col = 0; col < Board.SIZE; col++) {
+            for (int firstRow = 0; firstRow < Board.SIZE; firstRow++) {
+                int value = board.getValue(firstRow, col);
 
                 if (value == Board.EMPTY) {
                     continue;
                 }
 
-                if (seen[value]) {
-                    return false;
-                }
+                for (int secondRow = firstRow + 1;
+                     secondRow < Board.SIZE;
+                     secondRow++) {
 
-                seen[value] = true;
+                    if (board.getValue(secondRow, col) == value) {
+                        conflicts.add(new Conflict(
+                                "Column",
+                                new CellPosition(firstRow, col),
+                                new CellPosition(secondRow, col),
+                                value
+                        ));
+                    }
+                }
             }
         }
 
-        return true;
+        return conflicts;
     }
 }

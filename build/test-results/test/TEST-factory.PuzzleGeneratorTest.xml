@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="factory.PuzzleGeneratorTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.469Z" hostname="BRYAN" time="0.104">
+  <properties/>
+  <testcase name="generatedPuzzleIsValid()" classname="factory.PuzzleGeneratorTest" time="0.014"/>
+  <testcase name="generatedPuzzleHasUniqueSolution()" classname="factory.PuzzleGeneratorTest" time="0.014"/>
+  <testcase name="generatedPuzzleIsNotCompletelyFilled()" classname="factory.PuzzleGeneratorTest" time="0.015"/>
+  <testcase name="easyPuzzleHasAtLeastTargetNumberOfClues()" classname="factory.PuzzleGeneratorTest" time="0.016"/>
+  <testcase name="generatedCluesAreMarkedAsGiven()" classname="factory.PuzzleGeneratorTest" time="0.02"/>
+  <testcase name="emptyCellsRemainEditable()" classname="factory.PuzzleGeneratorTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

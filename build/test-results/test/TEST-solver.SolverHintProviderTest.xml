@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="solver.SolverHintProviderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.606Z" hostname="BRYAN" time="0.025">
+  <properties/>
+  <testcase name="hintDoesNotModifyOriginalBoard()" classname="solver.SolverHintProviderTest" time="0.014"/>
+  <testcase name="hintReturnsValueForEmptyCell()" classname="solver.SolverHintProviderTest" time="0.01"/>
+  <testcase name="solvedBoardHasNoHint()" classname="solver.SolverHintProviderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

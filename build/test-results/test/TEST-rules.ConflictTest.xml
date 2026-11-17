@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rules.ConflictTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-17T22:58:25.592Z" hostname="BRYAN" time="0.004">
+  <properties/>
+  <testcase name="rowRuleFindsDuplicate()" classname="rules.ConflictTest" time="0.002"/>
+  <testcase name="boxRuleFindsDuplicate()" classname="rules.ConflictTest" time="0.0"/>
+  <testcase name="emptyCellsDoNotCauseConflicts()" classname="rules.ConflictTest" time="0.001"/>
+  <testcase name="columnRuleFindsDuplicate()" classname="rules.ConflictTest" time="0.001"/>
+  <testcase name="validatorCollectsConflicts()" classname="rules.ConflictTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
